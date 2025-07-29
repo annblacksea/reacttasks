@@ -1,0 +1,63 @@
+li {
+	list-style: none;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	flex-grow: 1;
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 40px;
+	background-color: #e6d8d9;
+}
+
+.numbers {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto;
+	gap: 5%;
+	min-width: 500px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.numbers li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.operands {
+	display: flex;
+	justify-content: center;
+	gap: 10%;
+	padding: 20px 0;
+	background-color: #88a795;
+}
+
+.print {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 50px;
+	background-color: #5f5f5f;
+	font-size: 30px;
+	color: white;
+}
+
+.num-button {
+	width: 50px;
+	height: 50px;
+}
+
+.operand-button {
+	width: 70px;
+	height: 50px;
+}
+
+.resultcolor {
+	color: #88a795;
+}
