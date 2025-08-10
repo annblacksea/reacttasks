@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { FieldLayout } from './FieldLayout';
 
 export const FieldContainer = ({
@@ -43,4 +44,15 @@ export const FieldContainer = ({
 	};
 
 	return <FieldLayout field={field} click={click} />;
+};
+
+FieldContainer.propTypes = {
+	field: PropTypes.array,
+	setField: PropTypes.func,
+	currentPlayer: PropTypes.string,
+	setCurrentPlayer: PropTypes.func,
+	isGameEnded: PropTypes.bool,
+	setIsGameEnded: PropTypes.func,
+	isDraw: PropTypes.bool,
+	setIsDraw: PropTypes.func,
 };

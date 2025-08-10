@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styles from './FieldLayout.module.css';
 
 export const FieldLayout = ({ field, click }) => {
@@ -15,4 +16,9 @@ export const FieldLayout = ({ field, click }) => {
 			))}
 		</ul>
 	);
+};
+
+FieldLayout.propTypes = {
+	field: PropTypes.array,
+	click: PropTypes.func,
 };

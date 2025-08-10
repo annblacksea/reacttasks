@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { InformationLayout } from './InformationLayout';
 
 export const InformationContainer = ({
@@ -24,8 +25,17 @@ export const InformationContainer = ({
 		setIsGameEnded(false);
 		setIsDraw(false);
 		setField(['', '', '', '', '', '', '', '', '']);
-		console.log(currentPlayer, isGameEnded, isDraw);
 	};
 
 	return <InformationLayout text={text} click={startAgain} />;
+};
+
+InformationContainer.propTypes = {
+	isDraw: PropTypes.bool,
+	setIsDraw: PropTypes.func,
+	isGameEnded: PropTypes.bool,
+	setIsGameEnded: PropTypes.func,
+	currentPlayer: PropTypes.string,
+	setCurrentPlayer: PropTypes.func,
+	setField: PropTypes.func,
 };

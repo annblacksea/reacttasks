@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styles from './InformationLayout.module.css';
 
 export const InformationLayout = ({ text, click }) => {
@@ -9,4 +10,9 @@ export const InformationLayout = ({ text, click }) => {
 			</button>
 		</div>
 	);
+};
+
+InformationLayout.propTypes = {
+	text: PropTypes.string,
+	click: PropTypes.func,
 };

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { InformationContainer } from './InformationContainer';
 import { FieldContainer } from './FieldContainer';
 import styles from './GameLayout.module.css';
@@ -35,4 +36,15 @@ export const GameLayout = ({
 			/>
 		</div>
 	);
+};
+
+GameLayout.propTypes = {
+	field: PropTypes.array,
+	setField: PropTypes.func,
+	currentPlayer: PropTypes.string,
+	setCurrentPlayer: PropTypes.func,
+	isGameEnded: PropTypes.bool,
+	setIsGameEnded: PropTypes.func,
+	isDraw: PropTypes.bool,
+	setIsDraw: PropTypes.func,
 };
