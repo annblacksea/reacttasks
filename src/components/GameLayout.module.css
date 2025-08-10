@@ -1,0 +1,10 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	min-width: 25%;
+	padding: 30px;
+	align-self: center;
+	font-family: sans-serif;
+	color: #5d6c6b;
+}

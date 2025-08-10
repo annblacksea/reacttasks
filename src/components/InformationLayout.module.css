@@ -1,0 +1,29 @@
+.game-info {
+	min-height: 200px;
+	padding: 20px;
+	text-align: center;
+	background-color: #fbfcfd;
+	border-radius: 10px;
+	box-shadow: 5px 5px 8px 0px rgba(147, 167, 166, 1);
+}
+
+.game-status {
+	font-size: 25px;
+	cursor: default;
+}
+
+.start-button {
+	padding: 20px;
+	text-transform: uppercase;
+	background-color: #93a7a6;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 5px 5px 8px 0px rgba(147, 167, 166, 1);
+	color: #fbfcfd;
+	cursor: pointer;
+	transition: 0.3s all;
+}
+
+.start-button:hover {
+	background-color: #5d6c6b;
+}

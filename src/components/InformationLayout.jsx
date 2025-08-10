@@ -1,1 +1,12 @@
-export const InformationLayout = () => {};
+import styles from './InformationLayout.module.css';
+
+export const InformationLayout = ({ text, click }) => {
+	return (
+		<div className={styles['game-info']}>
+			<p className={styles['game-status']}>{text}</p>
+			<button className={styles['start-button']} onClick={click}>
+				Начать заново
+			</button>
+		</div>
+	);
+};

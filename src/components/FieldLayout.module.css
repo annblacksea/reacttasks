@@ -1,0 +1,25 @@
+.feld-list {
+	display: grid;
+	width: 70%;
+	margin: 0 auto;
+	padding: 0;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 15px;
+	aspect-ratio: 1 / 1;
+	list-style: none;
+}
+
+.list-item {
+	width: 70px;
+	height: 70px;
+	align-self: center;
+	justify-self: center;
+	text-align: center;
+	line-height: 70px;
+	font-size: 30px;
+	font-weight: 600;
+	background-color: #fbfcfd;
+	border-radius: 10px;
+	box-shadow: 5px 5px 8px 0px rgba(147, 167, 166, 1);
+	cursor: default;
+}
